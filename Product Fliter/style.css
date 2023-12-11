@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header h1 {
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 0;
+}
+
+.search-box {
+    width: 70%;
+    text-align: center;
+    margin: 40px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input {
+    padding: 11px 30px;
+    font-size: 18px;
+    flex: 1;
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-box button {
+    padding: 14px 30px;
+    background: #ff3929;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fliter-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+}
+
+.fliter-box a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: .3s all;
+}
+
+.fliter-box a:hover {
+    transform: scale(1.2);
+}
+
+.store-product{
+    width: 100%;
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgBox{
+    height: 150px;
+}
+.imgBox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-details{
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-around;
+}
+
+.product-details span{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.product-details h2{
+    font-size: 28px;
+}
+
+.store-product a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 5px;
+    background-color: #1877f2;
+    border-radius: 7px;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn.active{
+    background-color: grey;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 680px) {
+    .fliter-box{
+        gap: 40px;
+    }
+  }
+
+@media screen and (max-width: 520px) {
+    .fliter-box{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .search-box input{
+        padding: 10px 10px;
+    }
+  }
